@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/home.iml" filepath="$PROJECT_DIR$/home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home-api/home-api.iml" filepath="$PROJECT_DIR$/home-api/home-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home-data/home-data.iml" filepath="$PROJECT_DIR$/home-data/home-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home-server/home-sever.iml" filepath="$PROJECT_DIR$/home-server/home-sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home-web/home-web.iml" filepath="$PROJECT_DIR$/home-web/home-web.iml" />
+    </modules>
+  </component>
+</project>
