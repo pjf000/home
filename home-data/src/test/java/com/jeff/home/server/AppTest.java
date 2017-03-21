@@ -2,15 +2,12 @@ package com.jeff.home.server;
 
 import com.jeff.home.data.model.TUser;
 import com.jeff.home.data.service.TUserService;
-import com.jeff.home.data.service.impl.TUserServiceImpl;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
@@ -19,9 +16,9 @@ public class AppTest extends BaseJunitTest
 {
 
     @Autowired
-    TUserService tUserService;
+    private TUserService tUserService;
 
-    @org.junit.Test
+    @Test
     public void testInsert(){
 //        TUserServiceImpl tUserService = new TUserServiceImpl();
         TUser tUser = new TUser();
@@ -32,8 +29,13 @@ public class AppTest extends BaseJunitTest
         int res = tUserService.insertSelective(tUser);
         System.out.println("~~~~~~~~~~~~~~~~结果是："+res);
     }
-
-
+    @Test
+    public void testSelect(){
+        int id = 2;
+        TUser tUser = tUserService.selectByPrimaryKey(id);
+        System.out.println("______________________________________________");
+        System.out.println(tUser);
+    }
 
 
 
