@@ -1,7 +1,9 @@
 package com.jeff.home.data.dao;
 
 import com.jeff.home.data.model.TUser;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface TUserMapper {
     int deleteByPrimaryKey(Integer id);
 

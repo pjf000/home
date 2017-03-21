@@ -3,15 +3,15 @@ package com.jeff.home.data.service.impl;
 import com.jeff.home.data.dao.TUserMapper;
 import com.jeff.home.data.model.TUser;
 import com.jeff.home.data.service.TUserService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
  * Created by Administrator on 2017/3/20.
  */
-@Service("tUserService")
-@Slf4j
+@Component
+@Service
 public class TUserServiceImpl implements TUserService {
 
     @Autowired

@@ -1,4 +1,4 @@
-package home;
+package com.jeff.home.server;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

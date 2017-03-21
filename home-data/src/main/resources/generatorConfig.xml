@@ -15,7 +15,7 @@
 				</configuration>
 			</plugin> -->
 	<!-- jdbc jar包 classPathEntry 是引用的jdbc的类路径 -->
-	<classPathEntry	location="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar" />
+	<classPathEntry	location="C:/Users/JeffPeng/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar" />
 
 	<!-- id= -->
 	<context id="DB2Tables" targetRuntime="MyBatis3">

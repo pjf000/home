@@ -1,4 +1,4 @@
-package home;
+package com.jeff.home.api;
 
 /**
  * Hello world!
