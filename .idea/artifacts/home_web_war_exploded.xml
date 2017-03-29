@@ -26,6 +26,7 @@
           <element id="archive" name="home-api-1.0-SNAPSHOT.jar">
             <element id="module-output" name="home-api" />
           </element>
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.10" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.25" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
         </element>

@@ -6,20 +6,19 @@
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
 	 ">
 
-    <!-- 使得注解生效 -->
-    <context:annotation-config />
+    <context:property-placeholder location="classpath*:config/*.properties"/>
     <!-- 配置应用信息 -->
-    <dubbo:application name="${dubbo.application.name}" owner="dSheng"
-                       organization="dSheng" logger="${dubbo.application.logger}"/>
+    <dubbo:application name="${dubbo.application.name}" owner="dSheng" organization="dSheng" logger="${dubbo.application.logger}"/>
 
     <!-- 配置注册中心 -->
     <dubbo:registry address="${zookeeper}"/>
 
     <!-- 配置暴露服务端口号 -->
     <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}" serialization="kryo"
-           optimizer="com.dSheng.asset.platform.api.dubbo.SerializationOptimizerImpl"
+           optimizer=""
             />
     <!-- use tomcat server -->
     <dubbo:protocol name="rest" port="8881"

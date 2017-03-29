@@ -1,4 +1,4 @@
-package com.jeff.home.server;
+package com.jeff.home.data;
 
 
 import org.junit.Before;

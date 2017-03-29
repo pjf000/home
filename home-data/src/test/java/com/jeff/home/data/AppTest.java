@@ -1,13 +1,13 @@
-package com.jeff.home.server;
+package com.jeff.home.data;
 
 import com.jeff.home.data.model.TUser;
 import com.jeff.home.data.service.TUserService;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import org.junit.Test;
 
 /**
  * Unit test for simple App.

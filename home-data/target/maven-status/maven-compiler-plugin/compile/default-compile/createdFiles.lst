@@ -1,8 +1,8 @@
-com\jeff\home\data\dao\TUserMapper.class
+com\jeff\home\data\service\Impl\TUserServiceImpl.class
 com\jeff\home\data\util\Pagination.class
 com\jeff\home\data\util\PageInterceptor.class
 com\jeff\home\data\util\PageInterceptor$ReflectUtil.class
 com\jeff\home\data\util\Page.class
+com\jeff\home\data\dao\TUserDao.class
 com\jeff\home\data\model\TUser.class
 com\jeff\home\data\service\TUserService.class
-com\jeff\home\data\service\impl\TUserServiceImpl.class
