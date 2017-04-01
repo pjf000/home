@@ -9,20 +9,16 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
     <!-- 配置应用信息 -->
-    <dubbo:application name="${dubbo.application.name}" owner="asset-manage-web"
-                       organization="dSheng" logger="${dubbo.application.logger}"/>
+    <dubbo:application name="${dubbo.application.name}"  owner="dSheng" organization="dSheng" logger="${dubbo.application.logger}"/>
 
     <!-- 配置注册中心 -->
     <dubbo:registry address="${zookeeper}"/>
 
-    <!-- 配置暴露服务端口号 -->
-    <dubbo:protocol port="${dubbo.protocol.port}"/>
-
     <dubbo:monitor protocol="registry" />
 
     <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
-    <dubbo:annotation package="" />
+    <dubbo:annotation package="com.jeff.home.web.service" />
 
-    <context:component-scan base-package="com.jeff.home.web" />
+    <context:component-scan base-package="com.jeff.home.web.controller,com.jeff.home.web.service" />
 
 </beans>

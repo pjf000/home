@@ -17,15 +17,9 @@
     <dubbo:registry address="${zookeeper}"/>
 
     <!-- 配置暴露服务端口号 -->
-    <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}" serialization="kryo"
-           optimizer=""
-            />
-    <!-- use tomcat server -->
-    <dubbo:protocol name="rest" port="8881"
-                    threads="500" contextpath="assetService"
-                    server="tomcat" accepts="500"
-            />
-
+    <!--<dubbo:protocol name="dubbo" port="${dubbo.protocol.port}" serialization="kryo"
+                    optimizer="com.jeff.home.api.dubbo.SerializationOptimizerImpl"/>-->
+    <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}"/>
 
     <dubbo:monitor protocol="registry" />
 

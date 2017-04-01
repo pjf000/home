@@ -1,8 +1,7 @@
-package com.jeff.home.web;
+package com.jeff.home.web.controller;
 
 import com.jeff.home.api.model.TUserVo;
-import com.jeff.home.api.service.IUserService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import com.jeff.home.web.service.TUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BaseController {
 
     @Autowired
-    IUserService iUserService;
+    private TUserService tUserService;
 
     @RequestMapping("/home")
     public String index(Model model){
@@ -25,8 +24,8 @@ public class BaseController {
     @RequestMapping("/login")
     public String login(TUserVo tUserVo,Model model){
         tUserVo.setId(1);
-        tUserVo = iUserService.login(tUserVo);
+        tUserVo = tUserService.login(tUserVo);
         model.addAttribute("info",tUserVo);
-        return "login";
+        return "index";
     }
 }

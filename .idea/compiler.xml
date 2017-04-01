@@ -22,16 +22,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="home-api" />
         <module name="home-data" />
         <module name="home-server" />
         <module name="home-sever" />
         <module name="home-web" />
       </profile>
+      <profile default="false" name="Annotation profile for home-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="home-api" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="home" target="1.5" />
-      <module name="home-api" target="1.5" />
+      <module name="home-api" target="1.6" />
       <module name="home-data" target="1.5" />
       <module name="home-server" target="1.5" />
       <module name="home-sever" target="1.5" />
