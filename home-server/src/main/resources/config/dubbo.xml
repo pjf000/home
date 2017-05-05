@@ -11,7 +11,7 @@
 
     <context:property-placeholder location="classpath*:config/*.properties"/>
     <!-- 配置应用信息 -->
-    <dubbo:application name="${dubbo.application.name}" owner="dSheng" organization="dSheng" logger="${dubbo.application.logger}"/>
+    <dubbo:application name="${dubbo.application.name}" owner="jeff" organization="jeff" logger="${dubbo.application.logger}"/>
 
     <!-- 配置注册中心 -->
     <dubbo:registry address="${zookeeper}"/>
