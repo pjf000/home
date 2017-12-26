@@ -73,7 +73,7 @@
     <repository>
       <id>public</id>
       <name>Public Repositories</name>
-      <url>http://product.fenqile.com:8081/nexus/content/groups/public/</url>
+      <url>http://nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
